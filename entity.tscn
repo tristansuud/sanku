@@ -217,6 +217,7 @@ scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
 vframes = 5
 hframes = 5
+frame = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="texture"]
 method_call_mode = 1
@@ -232,7 +233,6 @@ anims/walk_up = SubResource( 9 )
 [node name="AnimationTree" type="AnimationTree" parent="texture"]
 tree_root = SubResource( 22 )
 anim_player = NodePath("../AnimationPlayer")
-active = true
 parameters/playback = SubResource( 23 )
 parameters/idle/blend_position = Vector2( 0.0394737, 0.547619 )
 parameters/walk/blend_position = Vector2( 0, 0 )
